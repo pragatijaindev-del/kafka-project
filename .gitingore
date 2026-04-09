@@ -1,0 +1,36 @@
+# Compiled files
+*.class
+
+# Logs
+*.log
+
+# Maven
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+
+# Gradle
+.gradle/
+build/
+
+# STS / Eclipse
+.metadata/
+.classpath
+.project
+.settings/
+.springBeans
+
+# IntelliJ (if opened there)
+.idea/
+*.iml
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+logs/
+
+# Application temp files
+*.tmp
