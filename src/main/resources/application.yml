@@ -1,0 +1,22 @@
+server:
+  port: 8081              
+
+spring:
+  application:
+    name: kafka-producer-service   
+
+  kafka:
+    bootstrap-servers: localhost:9092  
+    
+
+    producer:
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      # Converts the message key  into byte code
+
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+      # Converts Java objects into JSON format before sending to Kafka
+
+      properties:
+        spring.json.add.type.headers: false
+        # Disables adding Java class type information in Kafka message headers
+        
